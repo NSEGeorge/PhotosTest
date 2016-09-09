@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="EGGalleryView">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bTY-sT-OvS">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Q6R-zX-ySN">
+                            <rect key="frame" x="0.0" y="450" width="400" height="150"/>
+                            <color key="backgroundColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="150" id="nAo-FV-zTV"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="9vt-oS-4sO">
+                                <size key="itemSize" width="60" height="60"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="qdZ-2g-pVF"/>
+                                <outlet property="delegate" destination="-1" id="316-RF-Fn8"/>
+                            </connections>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Q6R-zX-ySN" secondAttribute="bottom" id="O8H-yJ-2Xk"/>
+                        <constraint firstItem="Q6R-zX-ySN" firstAttribute="leading" secondItem="bTY-sT-OvS" secondAttribute="leading" id="Tfy-Yx-sYS"/>
+                        <constraint firstAttribute="trailing" secondItem="Q6R-zX-ySN" secondAttribute="trailing" id="eVZ-sn-LZe"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oFe-TD-Cnb">
+                    <rect key="frame" x="0.0" y="50" width="400" height="400"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9gc-vQ-cSG" customClass="EGImageCropView">
+                            <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="9gc-vQ-cSG" secondAttribute="height" multiplier="1:1" id="9Tx-oP-lrf"/>
+                            </constraints>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="9gc-vQ-cSG" firstAttribute="top" secondItem="oFe-TD-Cnb" secondAttribute="top" id="9UW-rb-YdH"/>
+                        <constraint firstAttribute="width" secondItem="oFe-TD-Cnb" secondAttribute="height" multiplier="1:1" id="FDG-dS-3b3"/>
+                        <constraint firstAttribute="trailing" secondItem="9gc-vQ-cSG" secondAttribute="trailing" id="eu9-BQ-Szm"/>
+                        <constraint firstAttribute="bottom" secondItem="9gc-vQ-cSG" secondAttribute="bottom" id="jig-ZR-AWt"/>
+                        <constraint firstItem="9gc-vQ-cSG" firstAttribute="leading" secondItem="oFe-TD-Cnb" secondAttribute="leading" id="zCk-e5-5eB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="oFe-TD-Cnb" secondAttribute="trailing" id="1UE-Bl-tdK"/>
+                <constraint firstItem="oFe-TD-Cnb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="4BC-w5-he1"/>
+                <constraint firstItem="bTY-sT-OvS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="C9l-Nb-Sqj"/>
+                <constraint firstAttribute="bottom" secondItem="bTY-sT-OvS" secondAttribute="bottom" id="IPb-ZU-HKt"/>
+                <constraint firstAttribute="trailing" secondItem="bTY-sT-OvS" secondAttribute="trailing" id="Vjf-t4-aS9"/>
+                <constraint firstItem="bTY-sT-OvS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cSa-dB-2Xa"/>
+                <constraint firstItem="oFe-TD-Cnb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dRB-fJ-J3Z"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collectionView" destination="Q6R-zX-ySN" id="AzY-sI-die"/>
+                <outlet property="collectionViewContstraintHeight" destination="nAo-FV-zTV" id="WVo-sX-p0q"/>
+                <outlet property="imageCropView" destination="9gc-vQ-cSG" id="iBz-DG-DGK"/>
+                <outlet property="imageCropViewConstraintTop" destination="4BC-w5-he1" id="4e6-w6-ZXV"/>
+                <outlet property="imageCropViewContainer" destination="oFe-TD-Cnb" id="Uma-Dd-gam"/>
+            </connections>
+        </view>
+    </objects>
+</document>

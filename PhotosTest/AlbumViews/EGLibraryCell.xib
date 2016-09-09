@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="EGLibraryCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n7S-7P-yQR">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                    </imageView>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video" translatesAutoresizingMaskIntoConstraints="NO" id="xSU-oL-H4O">
+                        <rect key="frame" x="75" y="0.0" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="ZcN-8O-Qwh"/>
+                            <constraint firstAttribute="width" constant="25" id="h2m-Sx-tto"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="n7S-7P-yQR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5v0-T4-qnt"/>
+                <constraint firstItem="n7S-7P-yQR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="RS0-mo-gjd"/>
+                <constraint firstItem="xSU-oL-H4O" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Tz0-yN-Ema"/>
+                <constraint firstAttribute="trailing" secondItem="n7S-7P-yQR" secondAttribute="trailing" id="WaM-5f-JDT"/>
+                <constraint firstAttribute="bottom" secondItem="n7S-7P-yQR" secondAttribute="bottom" id="kGd-XT-96O"/>
+                <constraint firstAttribute="trailing" secondItem="xSU-oL-H4O" secondAttribute="trailing" id="nFf-aj-cgL"/>
+            </constraints>
+            <connections>
+                <outlet property="badgeView" destination="xSU-oL-H4O" id="XAJ-H1-uwb"/>
+                <outlet property="imageView" destination="n7S-7P-yQR" id="96W-al-jrI"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="video" width="32" height="32"/>
+    </resources>
+</document>

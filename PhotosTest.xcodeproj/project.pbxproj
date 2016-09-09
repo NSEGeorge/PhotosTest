@@ -7,25 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0442BD771D38109400E2EFF5 /* EGLibraryPhotosVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442BD751D38109400E2EFF5 /* EGLibraryPhotosVC.m */; };
+		0442BD781D38109400E2EFF5 /* EGLibraryPhotosVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0442BD761D38109400E2EFF5 /* EGLibraryPhotosVC.xib */; };
+		0442BD8B1D38F79F00E2EFF5 /* UICollectionView+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442BD871D38F79F00E2EFF5 /* UICollectionView+Convenience.m */; };
+		0442BD8C1D38F79F00E2EFF5 /* NSIndexSet+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442BD8A1D38F79F00E2EFF5 /* NSIndexSet+Convenience.m */; };
+		0442BD981D38F81B00E2EFF5 /* EGGalleryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442BD8F1D38F81B00E2EFF5 /* EGGalleryView.m */; };
+		0442BD991D38F81B00E2EFF5 /* EGGalleryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0442BD901D38F81B00E2EFF5 /* EGGalleryView.xib */; };
+		0442BD9A1D38F81B00E2EFF5 /* EGImageCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442BD921D38F81B00E2EFF5 /* EGImageCropView.m */; };
+		0442BD9B1D38F81B00E2EFF5 /* EGLibraryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442BD941D38F81B00E2EFF5 /* EGLibraryCell.m */; };
+		0442BD9C1D38F81B00E2EFF5 /* EGLibraryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0442BD951D38F81B00E2EFF5 /* EGLibraryCell.xib */; };
+		0442BD9D1D38F81B00E2EFF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0442BD971D38F81B00E2EFF5 /* Assets.xcassets */; };
+		0442BDED1D3B6FB000E2EFF5 /* VideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0442BDEB1D3B6FB000E2EFF5 /* VideoPlayer.m */; };
+		0442BDEE1D3B6FB000E2EFF5 /* VideoPlayer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0442BDEC1D3B6FB000E2EFF5 /* VideoPlayer.xib */; };
 		046440921D2D06BC00132A58 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 046440911D2D06BC00132A58 /* main.m */; };
 		046440951D2D06BC00132A58 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 046440941D2D06BC00132A58 /* AppDelegate.m */; };
-		046440981D2D06BC00132A58 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046440971D2D06BC00132A58 /* ViewController.m */; };
 		0464409B1D2D06BC00132A58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046440991D2D06BC00132A58 /* Main.storyboard */; };
-		0464409D1D2D06BC00132A58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0464409C1D2D06BC00132A58 /* Assets.xcassets */; };
 		046440A01D2D06BC00132A58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0464409E1D2D06BC00132A58 /* LaunchScreen.storyboard */; };
+		046440A91D2D06D300132A58 /* PhotosVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 046440A81D2D06D300132A58 /* PhotosVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0442BD741D38109400E2EFF5 /* EGLibraryPhotosVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGLibraryPhotosVC.h; sourceTree = "<group>"; };
+		0442BD751D38109400E2EFF5 /* EGLibraryPhotosVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGLibraryPhotosVC.m; sourceTree = "<group>"; };
+		0442BD761D38109400E2EFF5 /* EGLibraryPhotosVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EGLibraryPhotosVC.xib; sourceTree = "<group>"; };
+		0442BD861D38F79F00E2EFF5 /* UICollectionView+Convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+Convenience.h"; sourceTree = "<group>"; };
+		0442BD871D38F79F00E2EFF5 /* UICollectionView+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+Convenience.m"; sourceTree = "<group>"; };
+		0442BD891D38F79F00E2EFF5 /* NSIndexSet+Convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexSet+Convenience.h"; sourceTree = "<group>"; };
+		0442BD8A1D38F79F00E2EFF5 /* NSIndexSet+Convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexSet+Convenience.m"; sourceTree = "<group>"; };
+		0442BD8E1D38F81B00E2EFF5 /* EGGalleryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGGalleryView.h; sourceTree = "<group>"; };
+		0442BD8F1D38F81B00E2EFF5 /* EGGalleryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGGalleryView.m; sourceTree = "<group>"; };
+		0442BD901D38F81B00E2EFF5 /* EGGalleryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EGGalleryView.xib; sourceTree = "<group>"; };
+		0442BD911D38F81B00E2EFF5 /* EGImageCropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGImageCropView.h; sourceTree = "<group>"; };
+		0442BD921D38F81B00E2EFF5 /* EGImageCropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGImageCropView.m; sourceTree = "<group>"; };
+		0442BD931D38F81B00E2EFF5 /* EGLibraryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGLibraryCell.h; sourceTree = "<group>"; };
+		0442BD941D38F81B00E2EFF5 /* EGLibraryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGLibraryCell.m; sourceTree = "<group>"; };
+		0442BD951D38F81B00E2EFF5 /* EGLibraryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EGLibraryCell.xib; sourceTree = "<group>"; };
+		0442BD971D38F81B00E2EFF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0442BDEA1D3B6FB000E2EFF5 /* VideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayer.h; sourceTree = "<group>"; };
+		0442BDEB1D3B6FB000E2EFF5 /* VideoPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayer.m; sourceTree = "<group>"; };
+		0442BDEC1D3B6FB000E2EFF5 /* VideoPlayer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoPlayer.xib; sourceTree = "<group>"; };
+		0442BE171D3B9FCD00E2EFF5 /* Enums.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Enums.h; sourceTree = "<group>"; };
 		0464408D1D2D06BC00132A58 /* PhotosTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotosTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		046440911D2D06BC00132A58 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		046440931D2D06BC00132A58 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		046440941D2D06BC00132A58 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		046440961D2D06BC00132A58 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		046440971D2D06BC00132A58 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0464409A1D2D06BC00132A58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0464409C1D2D06BC00132A58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0464409F1D2D06BC00132A58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		046440A11D2D06BC00132A58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046440A71D2D06D300132A58 /* PhotosVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosVC.h; sourceTree = "<group>"; };
+		046440A81D2D06D300132A58 /* PhotosVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +69,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0442BD731D38105D00E2EFF5 /* SelectPhotoVC */ = {
+			isa = PBXGroup;
+			children = (
+				0442BD741D38109400E2EFF5 /* EGLibraryPhotosVC.h */,
+				0442BD751D38109400E2EFF5 /* EGLibraryPhotosVC.m */,
+				0442BD761D38109400E2EFF5 /* EGLibraryPhotosVC.xib */,
+			);
+			name = SelectPhotoVC;
+			path = AlbumVC;
+			sourceTree = "<group>";
+		};
+		0442BD841D38F79F00E2EFF5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0442BD851D38F79F00E2EFF5 /* CollectionView */,
+				0442BD881D38F79F00E2EFF5 /* IndexSet */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0442BD851D38F79F00E2EFF5 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				0442BD861D38F79F00E2EFF5 /* UICollectionView+Convenience.h */,
+				0442BD871D38F79F00E2EFF5 /* UICollectionView+Convenience.m */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		0442BD881D38F79F00E2EFF5 /* IndexSet */ = {
+			isa = PBXGroup;
+			children = (
+				0442BD891D38F79F00E2EFF5 /* NSIndexSet+Convenience.h */,
+				0442BD8A1D38F79F00E2EFF5 /* NSIndexSet+Convenience.m */,
+			);
+			path = IndexSet;
+			sourceTree = "<group>";
+		};
+		0442BD8D1D38F81B00E2EFF5 /* AlbumViews */ = {
+			isa = PBXGroup;
+			children = (
+				0442BD8E1D38F81B00E2EFF5 /* EGGalleryView.h */,
+				0442BD8F1D38F81B00E2EFF5 /* EGGalleryView.m */,
+				0442BD901D38F81B00E2EFF5 /* EGGalleryView.xib */,
+				0442BD911D38F81B00E2EFF5 /* EGImageCropView.h */,
+				0442BD921D38F81B00E2EFF5 /* EGImageCropView.m */,
+				0442BD931D38F81B00E2EFF5 /* EGLibraryCell.h */,
+				0442BD941D38F81B00E2EFF5 /* EGLibraryCell.m */,
+				0442BD951D38F81B00E2EFF5 /* EGLibraryCell.xib */,
+			);
+			path = AlbumViews;
+			sourceTree = "<group>";
+		};
+		0442BD961D38F81B00E2EFF5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0442BD971D38F81B00E2EFF5 /* Assets.xcassets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		0442BDE91D3B6FA400E2EFF5 /* VideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				0442BDEA1D3B6FB000E2EFF5 /* VideoPlayer.h */,
+				0442BDEB1D3B6FB000E2EFF5 /* VideoPlayer.m */,
+				0442BDEC1D3B6FB000E2EFF5 /* VideoPlayer.xib */,
+			);
+			path = VideoPlayer;
+			sourceTree = "<group>";
+		};
 		046440841D2D06BC00132A58 = {
 			isa = PBXGroup;
 			children = (
@@ -58,15 +159,20 @@
 		0464408F1D2D06BC00132A58 /* PhotosTest */ = {
 			isa = PBXGroup;
 			children = (
+				0442BDE91D3B6FA400E2EFF5 /* VideoPlayer */,
+				0442BD8D1D38F81B00E2EFF5 /* AlbumViews */,
+				0442BD961D38F81B00E2EFF5 /* Sources */,
+				0442BD841D38F79F00E2EFF5 /* Helpers */,
+				0442BD731D38105D00E2EFF5 /* SelectPhotoVC */,
 				046440931D2D06BC00132A58 /* AppDelegate.h */,
 				046440941D2D06BC00132A58 /* AppDelegate.m */,
-				046440961D2D06BC00132A58 /* ViewController.h */,
-				046440971D2D06BC00132A58 /* ViewController.m */,
 				046440991D2D06BC00132A58 /* Main.storyboard */,
-				0464409C1D2D06BC00132A58 /* Assets.xcassets */,
 				0464409E1D2D06BC00132A58 /* LaunchScreen.storyboard */,
 				046440A11D2D06BC00132A58 /* Info.plist */,
 				046440901D2D06BC00132A58 /* Supporting Files */,
+				046440A71D2D06D300132A58 /* PhotosVC.h */,
+				046440A81D2D06D300132A58 /* PhotosVC.m */,
+				0442BE171D3B9FCD00E2EFF5 /* Enums.h */,
 			);
 			path = PhotosTest;
 			sourceTree = "<group>";
@@ -137,8 +243,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0442BD781D38109400E2EFF5 /* EGLibraryPhotosVC.xib in Resources */,
+				0442BD991D38F81B00E2EFF5 /* EGGalleryView.xib in Resources */,
 				046440A01D2D06BC00132A58 /* LaunchScreen.storyboard in Resources */,
-				0464409D1D2D06BC00132A58 /* Assets.xcassets in Resources */,
+				0442BD9C1D38F81B00E2EFF5 /* EGLibraryCell.xib in Resources */,
+				0442BDEE1D3B6FB000E2EFF5 /* VideoPlayer.xib in Resources */,
+				0442BD9D1D38F81B00E2EFF5 /* Assets.xcassets in Resources */,
 				0464409B1D2D06BC00132A58 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,9 +260,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				046440981D2D06BC00132A58 /* ViewController.m in Sources */,
+				0442BD9B1D38F81B00E2EFF5 /* EGLibraryCell.m in Sources */,
+				0442BD8C1D38F79F00E2EFF5 /* NSIndexSet+Convenience.m in Sources */,
+				0442BD981D38F81B00E2EFF5 /* EGGalleryView.m in Sources */,
+				0442BD9A1D38F81B00E2EFF5 /* EGImageCropView.m in Sources */,
+				0442BDED1D3B6FB000E2EFF5 /* VideoPlayer.m in Sources */,
 				046440951D2D06BC00132A58 /* AppDelegate.m in Sources */,
 				046440921D2D06BC00132A58 /* main.m in Sources */,
+				0442BD771D38109400E2EFF5 /* EGLibraryPhotosVC.m in Sources */,
+				0442BD8B1D38F79F00E2EFF5 /* UICollectionView+Convenience.m in Sources */,
+				046440A91D2D06D300132A58 /* PhotosVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +418,7 @@
 				046440A61D2D06BC00132A58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

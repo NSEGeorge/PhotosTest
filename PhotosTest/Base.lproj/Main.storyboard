@@ -1,25 +1,88 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--PhotosVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PhotosVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dbR-Ra-Gx5">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aG-LR-yu3">
+                                        <rect key="frame" x="137" y="479" width="46" height="30"/>
+                                        <state key="normal" title="SHOW">
+                                            <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showBtnWasTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BgX-qP-NA3"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHO-hV-8et">
+                                        <rect key="frame" x="137" y="530" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="takePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HUW-if-lez"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4en-R9-lAa">
+                                        <rect key="frame" x="0.0" y="8" width="320" height="280"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="280" id="mzx-Jy-3t3"/>
+                                        </constraints>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G59-E0-S1j">
+                                        <rect key="frame" x="70" y="296" width="180" height="180"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="G59-E0-S1j" secondAttribute="height" multiplier="1:1" id="6oc-Ca-RHZ"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.5607843137254902" green="0.52941176470588236" blue="0.30980392156862746" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="G59-E0-S1j" firstAttribute="leading" secondItem="dbR-Ra-Gx5" secondAttribute="leading" constant="70" id="86V-gd-27s"/>
+                                    <constraint firstAttribute="trailing" secondItem="G59-E0-S1j" secondAttribute="trailing" constant="70" id="EzE-ha-iAE"/>
+                                    <constraint firstItem="4en-R9-lAa" firstAttribute="top" secondItem="dbR-Ra-Gx5" secondAttribute="top" constant="8" id="GCO-xJ-0EC"/>
+                                    <constraint firstItem="G59-E0-S1j" firstAttribute="centerX" secondItem="dbR-Ra-Gx5" secondAttribute="centerX" id="HqV-TI-eT9"/>
+                                    <constraint firstItem="4en-R9-lAa" firstAttribute="leading" secondItem="dbR-Ra-Gx5" secondAttribute="leading" id="M6D-Vc-7Bh"/>
+                                    <constraint firstItem="G59-E0-S1j" firstAttribute="top" secondItem="dbR-Ra-Gx5" secondAttribute="top" constant="296" id="Xei-lU-1Ie"/>
+                                    <constraint firstItem="3aG-LR-yu3" firstAttribute="centerX" secondItem="dbR-Ra-Gx5" secondAttribute="centerX" id="bds-B2-dIR"/>
+                                    <constraint firstAttribute="bottom" secondItem="3aG-LR-yu3" secondAttribute="bottom" constant="59" id="ugB-db-lcj"/>
+                                    <constraint firstAttribute="trailing" secondItem="4en-R9-lAa" secondAttribute="trailing" id="wv0-SS-eHd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dbR-Ra-Gx5" secondAttribute="bottom" id="BEp-Sv-eov"/>
+                            <constraint firstAttribute="trailing" secondItem="dbR-Ra-Gx5" secondAttribute="trailing" id="Rsp-Os-lw4"/>
+                            <constraint firstItem="dbR-Ra-Gx5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hWD-Bz-6OC"/>
+                            <constraint firstItem="dbR-Ra-Gx5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wdS-fi-upf"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="cameraCaptureArea" destination="4en-R9-lAa" id="pLA-Zw-Vwg"/>
+                        <outlet property="imageView" destination="G59-E0-S1j" id="Cqi-Zr-ZDg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="348" y="455"/>
         </scene>
     </scenes>
 </document>
